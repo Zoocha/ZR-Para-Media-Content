@@ -1,0 +1,10 @@
+name: 'ZC Media Content Paragraph'
+description: 'Installs Zoocha Media Content Paragraph Component'
+type: 'Feature'
+
+recipes:
+  - zr-media-bundle
+  - zr-paragraph-bundle
+
+config:
+  strict: false
