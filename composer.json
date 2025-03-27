@@ -3,7 +3,9 @@
     "description": "ZR Media Content - Layout Builder",
     "type": "drupal-recipe",
     "require": {
-        "php": ">=8.1"
+        "php": ">=8.1",
+        "zr/zr-media-bundle": "^1.0",
+        "zr/zr-paragraph-bundle": "^1.0"
     },
     "authors": [
         {
