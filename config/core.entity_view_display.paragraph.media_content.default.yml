@@ -4,7 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.media_content.field_media
+    - field.field.paragraph.media_content.field_size
+    - field.field.paragraph.media_content.field_title
     - paragraphs.paragraphs_type.media_content
+  module:
+    - options
+_core:
+  default_config_hash: QtvKsXHnQeQewTlPXIjru_24tQIexaTuuf25VDTXmq0
 id: paragraph.media_content.default
 targetEntityType: paragraph
 bundle: media_content
@@ -12,11 +18,26 @@ mode: default
 content:
   field_media:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_size:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden: {  }
